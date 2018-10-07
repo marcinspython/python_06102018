@@ -14,9 +14,17 @@ for i in indeksy:
         min_i = i         # debugger - uruchomi test przy min_i = i
     if max_i == None or liczby[i] > liczby[max_i]:
         max_i = i
-        print(i)
-        print(max_i)
+        print(f"i= {i}")
+        print(f"max_i = {max_i}")
 # zamień miejscami
+
+if min_i is not None and max_i is not None:
+    tmp = liczby[min_i]
+    liczby[min_i] = liczby[max_i]
+    liczby[max_i] = tmp
+
+# 2 sposób  w jednej linii - zamiana miejscami
+liczby[min_i], liczby[max_i] = liczby[max_i], liczby[min_i]
 
 
 

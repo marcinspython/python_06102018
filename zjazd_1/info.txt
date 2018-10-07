@@ -103,5 +103,12 @@ print('costam')
 ########################
 https://www.progsbase.com/wp-content/plugins/progsbasewww/quiz/python/
 ################################################
+zad.6 kolekcje
+x.append(2) -by dodać element
+x[0] = 2 # zmienia wartość na liście o podanym indeksie
+tmp = x[min_i] #1
+x[min_i] = x[max_i]
+x[max_i] = tmp
+################################################
 
-
+zad 7 i 8 dom
