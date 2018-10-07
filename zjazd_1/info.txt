@@ -80,6 +80,8 @@ range(10) #tworzy wartość
 list(range(10)) # tworzy listę
 
 https://bonito.pl/szukaj/python/1,0,1/0 #zed
+
+################################################
 CONSOLA:
 
 print?
@@ -99,4 +101,7 @@ for i in x:
     print(f'{i:6}', end='')
 print('costam')
 ########################
+https://www.progsbase.com/wp-content/plugins/progsbasewww/quiz/python/
+################################################
+
 
