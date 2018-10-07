@@ -59,5 +59,16 @@ a = (1,2,(3,4), ‘a’, ‘napis) #tuple
 a[2][3]
 
 
+LISTA
+x.insert? #help
+x.extend(y)
+x.append(y) #dodaje element do listy
 
+y.pop() #usuwa ostatni element listy
+y.pop(3) #usuwa element listy
 
+sum(Y)
+
+split(",") #metoda
+
+debbuger - sprawdzanie poprawnosci
