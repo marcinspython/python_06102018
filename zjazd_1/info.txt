@@ -75,3 +75,28 @@ debbuger - sprawdzanie poprawnosci
 
 enumerate(lista, 1) #numeracja obiektów itp
 
+#przykłady na konsoli
+range(10) #tworzy wartość
+list(range(10)) # tworzy listę
+
+https://bonito.pl/szukaj/python/1,0,1/0 #zed
+CONSOLA:
+
+print?
+Docstring:
+print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
+Prints the values to a stream, or to sys.stdout by default.
+Optional keyword arguments:
+file:  a file-like object (stream); defaults to the current sys.stdout.
+sep:   string inserted between values, default a space.
+end:   string appended after the last value, default a newline.
+flush: whether to forcibly flush the stream.
+Type:      builtin_function_or_method
+
+########################
+x=range(1, 500, 35)
+for i in x:
+    print(f'{i:6}', end='')
+print('costam')
+########################
+
