@@ -1,0 +1,63 @@
+06.10.2018
+
+https://github.com/marcinspython/python_06102018
+SLACK
+https://pythonalx.slack.com/messages/GD8EDN6SG/
+
+liczba = int(input("Podaj liczbę: "))
+print(liczba % 2 == 0 and liczba % 3 == 0 and liczba > 10 or liczba == 7)
+
+babun
+git diff
+git commit -am "Zadanie 11"
+git push origin master
+
+07.10.2018
+cat -wyświetla zawartość pliku
+dir(a)
+a.find itp
+a.title
+a.upper
+a.split
+a.lower
+b.strip()
+
+abs(7-9) # wynik 2
+abs(9-7) # wynik 2
+
+Kilka wierszy TAB
+w prawo zaznaczam wszystko i TAB
+w lewo zaznaczam wszystko i SHIFT + TAB
+
+https://github.com/rkorzen/python_bootcamp_06102018
+
+kolekcje:
+tuple
+słownik
+napis
+słownik
+
+Tupla
+x = (1,2,3,4)
+type(x)
+dir(x)
+pip install ipython
+pip install jupyter
+
+for i in y:
+print(i)
+
+funkcja id # tuple
+id(x)
+id(y)
+
+nowa_lista =  [‘a’, ‘b’]
+id(nowa_lista
+
+KOLEKCJE
+a = (1,2,(3,4), ‘a’, ‘napis) #tuple
+a[2][3]
+
+
+
+
