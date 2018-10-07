@@ -1,5 +1,8 @@
 # plansza = input("Podaj wielkość planszy [0-1000]: ")
 
+# TODO
+# dodać procentowego rozliczania planszy
+
 plansza = ("100 x 100")
 print(plansza)
 
@@ -24,5 +27,6 @@ else:
     print("Jesteś poza planszą")
 
 print(X, Y)
+
 
 
