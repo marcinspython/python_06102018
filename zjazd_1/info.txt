@@ -72,3 +72,6 @@ sum(Y)
 split(",") #metoda
 
 debbuger - sprawdzanie poprawnosci
+
+enumerate(lista, 1) #numeracja obiektów itp
+
