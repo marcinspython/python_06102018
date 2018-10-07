@@ -21,7 +21,7 @@ elif y > 90:
     print("dolna krawedz")
 else:
     print("jesteś w centrum")
-
+    # ########################################################################
     # 2 sposób
 
     x = int(input("Podaj pozycję X "))
@@ -50,3 +50,18 @@ else:
         print("dolna krawedz")
     else:
         print("jesteś w centrum")
+
+# ### ZAKOŃCZ PROGRAM
+
+while True:
+    dane_wejsciowe = input("Popdaj liczbę lub wpisz KONIEC by zakonczyc")
+
+    if dane_wejsciowe == "KONIEC":
+        break
+
+# ########################################################################
+
+    if znalezione_min is None or znalezione_min < dane_wejsciowe:
+        znalezione_min = dane_wejsciowe
+    if znalezione_max is None or znalezione_max > dane_wejsciowe:
+        znalezione_max = dane_wejsciowe
