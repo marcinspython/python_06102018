@@ -44,9 +44,9 @@ if g_x > 10 or g_y > 10 or g_x < 1 or g_y < 1:
 min_1_ruch_po = abs(s_x - g_x) + abs(s_y - g_y)
 
 # sparawdz czy znalazł skarb
-if min_1_ruch_po == 0:
-    print("Wygrałeś")
-    # break
+    if min_1_ruch_po == 0:
+        print("Wygrałeś")
+        break
 
 # określ czy się przybliża czy oddala
 if min_1_ruch_po > min_1_ruch_przed:
