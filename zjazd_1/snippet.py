@@ -22,7 +22,7 @@ elif y > 90:
 else:
     print("jesteś w centrum")
 
-    # 222 ddddddddddddddd
+    # 2 sposób
 
     x = int(input("Podaj pozycję X "))
     y = int(input("Podaj pozycję Y "))
