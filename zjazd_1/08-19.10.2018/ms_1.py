@@ -18,3 +18,5 @@ print(f"DIVISION_0: {division0}")
 print(f"DIVISION_1: {division1} float")
 print(f"DIVISION_2: {division2} int")
 print(f"DIVISION_3: {division3}")
+
+print(f'Wynik mnożenia to: {a*b} lub {multi}!')
