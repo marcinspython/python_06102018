@@ -9,7 +9,7 @@
 
 
 
-# pętle if else
+# petle if else
 
 a = int(input("Podaj a"))
 b = int(input("Podaj b"))
