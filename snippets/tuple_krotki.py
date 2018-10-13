@@ -43,3 +43,7 @@ print(f'tupla uczestnicy = {uczestnicy}')
 print(f'tupla uczestnicy [0:4:2] = {uczestnicy[0:4:3]}')
 
 print("c.d.n")
+
+
+
+print('//--- funkcja len() -----------------------------------------------------')
