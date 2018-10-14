@@ -67,3 +67,6 @@ print(x + y)
 #########
 a = "Hello, World! "
 print(a.strip())
+
+#########
+print("Test GIT-a")
