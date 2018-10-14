@@ -70,3 +70,4 @@ print(a.strip())
 
 #########
 print("Test GIT-a")
+print("Test GIT-a_2")
