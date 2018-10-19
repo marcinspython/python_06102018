@@ -5,13 +5,17 @@
 napis = input(f"Podaj napis zawierający samogłoski: ")
 print(napis)
 
-for i in napis:
-    if i == "a":
-        print("To jest 'a'")
-        print(len(napis))
-        continue
-    elif i == "e":
-        print("To jest 'e'")
-        continue
-else:
-    print("W wyrazie nie ma samogłosek")
+sam_a = napis.count("a")
+sam_e = napis.count("e")
+sam_i = napis.count("i")
+sam_o = napis.count("o")
+sam_u = napis.count("u")
+sam_y = napis.count("y")
+print(
+    f"W wyrazie występują: "
+    f"\n {sam_a} samogłoski 'a' "
+    f"\n {sam_e} samogłoski 'e' "
+    f"\n {sam_i} samogłoski 'i' "
+    f"\n {sam_o} samogłoski 'o' "
+    f"\n {sam_u} samogłoski 'u' "
+    f"\n {sam_y} samogłoski 'y'")
