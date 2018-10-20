@@ -1,5 +1,6 @@
 # from .zad_2 import wiecej_niz
 
+# if __name__ == "__main"
 
 def wiecej_niz(napis, prog):
     return {znak for znak in napis if napis.lower().count(znak) > prog}
