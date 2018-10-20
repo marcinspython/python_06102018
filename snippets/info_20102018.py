@@ -1,4 +1,4 @@
-20.10.2018_
+# ---- 20.10.2018_
 # -----------------------------------------------------------------------------------
 Struktury danych c.d.
 "Wstęp do programowania" [Proste wprowadzenie do fascynującego świata programowania]
@@ -6,4 +6,9 @@ Struktury danych c.d.
 "ROS Robotics Project"
 "import python newsletter"
 # -----------------------------------------------------------------------------------
-SŁOWNIK
+# ---- SŁOWNIKI
+a.update(b)
+# -----------------------------------------------------------------------------------
+# ---- ZBIORY
+git stash -odkłada brancha
+
