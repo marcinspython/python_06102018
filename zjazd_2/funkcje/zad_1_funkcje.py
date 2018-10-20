@@ -1,4 +1,3 @@
-import pytest
 
 def czy_jest_pierwsza(liczba):
     for dzielnik in range(2, liczba):
