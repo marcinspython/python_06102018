@@ -8,17 +8,17 @@ print(type(przywitaj_sie))
 print(type(przywitaj_sie()))
 
 print(przywitaj_sie())
-...imiona....
+# ...imiona....
 
 # -----------------------------
-def czy_wieksza_niz_3(liczba)
+def czy_wieksza_niz_3(liczba):
     if liczba>3:
         return True
     return False
 
 
 # -------- testy ---------------------
-def czy_wieksza_niz_3(liczba)
+def czy_wieksza_niz_3(liczba):
     if liczba > 3:
         return True
     return False
