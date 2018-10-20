@@ -1,14 +1,7 @@
 # ---- 20.10.2018_
 # -----------------------------------------------------------------------------------
-Struktury
-danych
-c.d.
-"Wstęp do programowania"[Proste
-wprowadzenie
-do
-fascynującego
-świata
-programowania]
+Struktury danych c.d.
+"Wstęp do programowania"[Proste wprowadzenie do fascynującego świata programowania]
 "Python dla profesjonalistów"
 "ROS Robotics Project"
 "import python newsletter"
