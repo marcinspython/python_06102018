@@ -11,4 +11,5 @@ a.update(b)
 # -----------------------------------------------------------------------------------
 # ---- ZBIORY
 git stash -odkłada brancha
+integracja z JIRA
 
