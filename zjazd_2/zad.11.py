@@ -7,4 +7,4 @@ while True:
     liczba = int(komenda)
     liczby.add(liczba)
 
-print(len(liczby & set(range(2, 101, 2))))
+print(len(liczby & set(range(2, 101, 2)))

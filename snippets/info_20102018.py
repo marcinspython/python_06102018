@@ -13,3 +13,5 @@ a.update(b)
 git stash -odkłada brancha
 integracja z JIRA
 
+git merge zad.10 #np. jak byłem na branchu devel
+debugger!!!!
