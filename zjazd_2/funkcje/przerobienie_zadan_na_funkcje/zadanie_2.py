@@ -1,8 +1,3 @@
-a = 3
-b = 9
-h = 6.5
-
-
 def pole_trapezu(a, b, h):
     """
     Liczy pole trapezu
