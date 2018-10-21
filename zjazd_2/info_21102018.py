@@ -77,11 +77,42 @@ Out[3]:
  'sort']
 
 # -----------------
+homework - zad 13 i next przeanalizowac pod katem funkcji
+
+# -----------------
+formatuj napisy
+PLN
+
+rozpakowanie
+
+def foo2(*args)
+
+# ----------------------------------------------------------------------------
+zad.4 - przykład
+# x = ("text1 $cena", "text2 $cena", "text3 $cena", "text4 $cena", "text5 $cena")
+def foo(cena, *args):
+    print("args", args)
+    print("cena", x)
+
+x = ("text1 $cena", "text2 $cena", "text3 $cena", "text4 $cena", "text5 $cena")
+foo(10, *x)
+
+# ----------------------------------------------------------------------------
+return "\n".join(out)
 
 
-
-
-
+# ------------------------yad.4----------------------------------------------------
+def formatuj(cena, *args):
+    out = []
+    for text in args:
+        text = text.replace('$cena', str(cena))
+        out.append(text)
+    return "\n".join(out)
+# ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+# ----------------------------------------------------------------------------
+funkcja lambda
+np.: lambda x: x%3==0
 
 
 
