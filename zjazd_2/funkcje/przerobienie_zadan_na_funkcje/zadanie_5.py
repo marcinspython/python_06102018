@@ -1,3 +1,5 @@
+
+# pobieranie danych
 miasto_A = input("Podaj miasto A: ")
 miasto_B = input("Podaj miasto B: ")
 dystans = float(input(f"Podaj dystans {miasto_A}-{miasto_B} :"))
@@ -5,10 +7,12 @@ cena_paliwa = float(input("Podaj cenę paliwa: "))
 spalanie = float(input("Spalanie na 100 km: "))
 koszt_przejazdu = int(((dystans * spalanie) / 100) * cena_paliwa)
 
+# obliczanie kosztu
 print(koszt_przejazdu)
 
 print(f"Koszt przejazdu: \n {miasto_A}, {miasto_B}, \n to {koszt_przejazdu}")
 
+# prezentowanie danych
 output = f"""
 Miasto A: {miasto_A}
 Miasto B: {miasto_B}
