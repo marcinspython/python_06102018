@@ -1,15 +1,24 @@
 from random import randint
 
+def losuj_polozenie():
+    return randint(1,10), randint(1,10)
+
+def minimalna_liczba_krokow(gracz_x, gracz_y )
+
 # wylosuj położenie skarbu
-skarb_x = randint(1, 10)
-skarb_y = randint(1, 10)
+# skarb_x = randint(1, 10)
+# skarb_y = randint(1, 10)
+
+skarb_x, skarb_y = losuj_polozenie()
 
 # wylosuj początkowe położenie gracza
-gracz_x = randint(1, 10)
-gracz_y = randint(1, 10)
+# gracz_x = randint(1, 10)
+# gracz_y = randint(1, 10)
+
+gracz_x, gracz_y = losuj_polozenie()
 
 # oblicz minimalna liczbę kroków między graczem a skarbem
-minimalna_liczba_krokow_po_wylosowaniu = abs(skarb_x - gracz_x) + abs(skarb_y-gracz_y)
+minimalna_liczba_krokow_po_wylosowaniu = abs(skarb_x - gracz_x) + abs(skarb_y - gracz_y)
 # zapisz w zmiennej
 
 # ustaw początkowa liczbę ruchów na 0
@@ -22,7 +31,7 @@ liczba_ruchow = 0
 while True:
     # oblicz minimalna liczba krokow przed ruchem
     min_l_ruch_przed = abs(skarb_x - gracz_x) + abs(skarb_y - gracz_y)
-    ruch =  input("Wykonaj ruch [wasd]: ")
+    ruch = input("Wykonaj ruch [wasd]: ")
     # poruszanie gracza po planszy
     # w a s d
     if ruch == 'w':
@@ -61,9 +70,13 @@ while True:
         skarb_x = randint(1, 10)
         skarb_y = randint(1, 10)
         # oblicz minimalna liczbę kroków między graczem a skarbem
-        minimalna_liczba_krokow_po_wylosowaniu = abs(skarb_x - gracz_x) + abs(skarb_y-gracz_y)
+        minimalna_liczba_krokow_po_wylosowaniu = abs(skarb_x - gracz_x) + abs(skarb_y - gracz_y)
 
 
-print(f"Położenie skarbu: x={skarb_x}, y={skarb_y}")
-print(f"Położenie gracza: x={gracz_x}, y={gracz_y}")
-print(minimalna_liczba_krokow_po_wylosowaniu)
+def drukuj():
+    print(f"Położenie skarbu: x={skarb_x}, y={skarb_y}")
+    print(f"Położenie gracza: x={gracz_x}, y={gracz_y}")
+    print(minimalna_liczba_krokow_po_wylosowaniu)
+    return minimalna_liczba_krokow_po_wylosowaniu
+
+drukuj()
