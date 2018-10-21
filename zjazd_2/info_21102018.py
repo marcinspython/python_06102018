@@ -11,3 +11,17 @@ dane = pobieranie_danych()
 *dane (rozpakowanie tupli)
 koszt = obliuczenie_kosztu(*dane)
 
+zad.10 przeróbka
+dane = podaj_liczby_i_operacje()
+kalkulator(*dane)
+
+# obsługa błędu
+def prezentuj_wynik():
+    danie = podaj_liczby_i_operacje()
+    try:
+        wynik = kalkulator(*dane)
+    except ValueError:
+        wynik = "Operacja niedozwolona"
+    print(wynik)
+
+zad.13 przeróbka
