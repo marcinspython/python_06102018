@@ -6,4 +6,5 @@ print(dir(azor))
 print(azor.gatunek)
 print(rudolf.gatunek)
 
-dziedziczenie 
+dziedziczenie
+jupyter - do analizy danych
