@@ -51,8 +51,14 @@ def test_employee_pay_salary_overhours():
 # >>> google = Company("google")
 # >>> google.add_employee(employee)
 # >>> google.size()
-# >>> 1
+# 1
 # >>> google.pay_all_salary()
-# >>> 500
+# 500
 # >>> google.pay_all_salary()
-# >>> 0
+# 0
+# >>> employee2 = Employee('Krzysztof', 'Nowak', 200.0)
+# >>> employee2.register_time(5)
+# >>> google.pay_all_salary()
+# >>> google.add_employee(employee2)
+# >>> google.pay_all_salary()
+# 1000
