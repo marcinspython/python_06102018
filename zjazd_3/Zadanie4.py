@@ -10,3 +10,22 @@ basket.generate_report()
 W sumie: 50.00'
 """
 
+print("*" *100)
+
+class Basket(object):
+
+    def __init__(self):
+        self.produkty = []
+
+    def __str__(self):
+        return "Basket"
+    pass
+
+def test_create_basket():
+    basket = Basket()
+    assert str(basket) == "Basket"
+    assert basket.produkty == []
+
+def test_add_product_to_basket():
+    basket = Basket()
+
