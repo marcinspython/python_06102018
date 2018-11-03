@@ -42,4 +42,17 @@ def test_employee_pay_salary_after_salary_was_payed():
 def test_employee_pay_salary_overhours():
     employee = Employee('Jan', 'Nowak', 100.0)
     employee.register_time(10)
-    assert employee.pay_salary() == 8*100+2*2*100
+    assert employee.pay_salary() == 8 * 100 + 2 * 2 * 100
+
+
+# Utwórz klasę Company. Ktora inicjalizuje sie z nazwa:
+# >>> employee = Employee('Jan', 'Nowak', 100.0)
+# >>> employee.register_time(5)
+# >>> google = Company("google")
+# >>> google.add_employee(employee)
+# >>> google.size()
+# >>> 1
+# >>> google.pay_all_salary()
+# >>> 500
+# >>> google.pay_all_salary()
+# >>> 0
