@@ -4,5 +4,3 @@ class Samochod:
 
     def wypisz_informacje(self):
         print("tttt")
-
-samochod =

@@ -8,3 +8,6 @@ print(rudolf.gatunek)
 
 dziedziczenie
 jupyter - do analizy danych
+
+Do uruchomienia jupyter:
+jupyter-noptebook [wpisz w folderze gdzie znajduje sie formularz jupyter]
