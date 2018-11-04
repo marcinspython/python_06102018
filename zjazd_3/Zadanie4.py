@@ -52,7 +52,11 @@ class Basket:
         return sum_
 
     def generate_report(self):
-        return f"Produkty w koszyku:"
+        output = '''Produkty w koszyku:"
+{}        
+W sumie: {}
+
+'''
 
 
 def test_product():
@@ -101,7 +105,8 @@ def test_basket_generate_report():
     basket = Basket()
     product = Product(1, 'Woda', 10.00)
     basket.add_product(product, 5)
-    assert basket.generate_report() == '''Produkty w koszyku:'''
+    assert basket.generate_report() == '''Produkty w koszyku:
+    '''
 
 #     assert basket.generate_report() == '''Produkty w koszyku:
 # - Woda(1), cena: 10.00 x 5
