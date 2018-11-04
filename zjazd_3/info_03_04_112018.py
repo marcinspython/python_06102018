@@ -36,3 +36,24 @@ def count_total_price(self):
         return sum_
 
 ----------------------------------------------
+be1 = (1, "woda", 10)
+be2 = (2, "Piwo", 23)
+be3 = (3, "Ser", 4)
+basket_entry = (be1, be2, be3)
+basket_entry = (be1.name, be2, be3)
+print(be1)
+(1, 'woda', 10)
+print(be1, be2, be3)
+(1, 'woda', 10) (2, 'Piwo', 23) (3, 'Ser', 4)
+------
+be1
+Out[14]: (1, 'woda', 10)
+------
+print(be1)
+(1, 'woda', 10)
+------
+str(be1)
+Out[16]: "(1, 'woda', 10)"
+-----
+f'{be1}'
+Out[18]: "(1, 'woda', 10)"
