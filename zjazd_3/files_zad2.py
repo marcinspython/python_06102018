@@ -20,7 +20,8 @@ with open(file_name) as f:
 
 def sort_key(x):
     return x[1]
-
+# to samo jako lambda
+# key=lambda x: x[1]
 
 print("Czas przebywania w systemie: ")
 for item in sorted(user_total_time.items(), key=lambda x: x[1], reverse=True):
