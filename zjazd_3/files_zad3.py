@@ -26,3 +26,4 @@ else:
     print("nieprawidlowa ilosc parametrów")
 
 # python files_zad3.py dane\emails.txt cvlean_emails.txt RUN!!!!!!!!!!! in command line
+# powinno uporzadkowac maile i zapisac p w pliku clean....
