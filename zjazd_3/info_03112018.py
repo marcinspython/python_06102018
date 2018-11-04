@@ -27,3 +27,12 @@ jupyter-noptebook [wpisz w folderze gdzie znajduje sie formularz jupyter]
 
 
 ----------------------------------------------
+
+
+def count_total_price(self):
+    sum_ = 0
+    for e in self.entries:
+        sum_ += e.product.price * e.quantity
+        return sum_
+
+----------------------------------------------
