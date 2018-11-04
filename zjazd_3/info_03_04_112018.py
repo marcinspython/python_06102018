@@ -84,8 +84,18 @@ def withdraw_money(self, amount):
 -------------------
 WEKTORY:
 https://tomaszgolan.github.io/js-python/wyklady/js-python_w10/
-
+----------------------------------------------------
+lambda
+https://tomaszgolan.github.io/js-python/wyklady/js-python_w12/
 ----------------------------------------------------
 | DANE | 5.4. Dane z pliku
 --------
 https://python101.readthedocs.io/pl/latest/bazy/sql/dane.html
+
+------------------------------------------------------
+dir("a") ----> Consola Python
+------------------------------------------------------
+WYRAZENIA REGULARNE:
+- Regex itp
+------------------------------------------------------
+
