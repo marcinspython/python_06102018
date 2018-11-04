@@ -80,3 +80,5 @@ def withdraw_money(self, amount):
             bills_to_withdraw.append(bill)
     return bills_to_withdraw
 -------------------
+WEKTORY:
+https://tomaszgolan.github.io/js-python/wyklady/js-python_w10/
