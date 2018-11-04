@@ -22,6 +22,10 @@ class Vector:
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 
+    def __str__(self):
+        pass
+
+
 
 def test_vector_add():
     v1 = Vector(1,3)

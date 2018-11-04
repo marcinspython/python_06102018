@@ -64,7 +64,7 @@ return output.format()
 2 wyrażenia oznaczające to samo:
 assert not cash_machine.is_available()
 assert cash_machine.is_available() == False
----------------------------------------------------
+----------------------------------------------------
 
 
 def put_money(self, bills):
@@ -79,6 +79,13 @@ def withdraw_money(self, amount):
         if sum(bills_to_withdraw) + bill <= amount:
             bills_to_withdraw.append(bill)
     return bills_to_withdraw
+
+
 -------------------
 WEKTORY:
 https://tomaszgolan.github.io/js-python/wyklady/js-python_w10/
+
+----------------------------------------------------
+| DANE | 5.4. Dane z pliku
+--------
+https://python101.readthedocs.io/pl/latest/bazy/sql/dane.html
