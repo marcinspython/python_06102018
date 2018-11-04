@@ -61,3 +61,22 @@ Out[18]: "(1, 'woda', 10)"
 -------------------------------------------------
 return output.format()
 ---------------------------------------------------
+2 wyrażenia oznaczające to samo:
+assert not cash_machine.is_available()
+assert cash_machine.is_available() == False
+---------------------------------------------------
+
+
+def put_money(self, bills):
+    self.bills.extend(bills)
+
+----------
+
+zadanie5
+def withdraw_money(self, amount):
+    bills_to_withdraw = []
+    for bill in self.bills:
+        if sum(bills_to_withdraw) + bill <= amount:
+            bills_to_withdraw.append(bill)
+    return bills_to_withdraw
+-------------------
