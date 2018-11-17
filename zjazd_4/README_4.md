@@ -21,3 +21,6 @@ def square_area(n):
 def triangle_area(base, height):
     return (base * height) / 2
 
+print(__name__)
+if __name__ ="_main__":
+ 
