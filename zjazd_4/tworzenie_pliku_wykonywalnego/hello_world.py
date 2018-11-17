@@ -6,4 +6,4 @@ if len(sys.argv) > 1:
 else:
     print("Hello World")
 
-input()
+input("Podaj liczbę: ")
