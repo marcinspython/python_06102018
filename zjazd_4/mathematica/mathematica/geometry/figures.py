@@ -1,6 +1,9 @@
-def square_area(n):
-    return n ** 2
+def square_area(a):
+    if a < 0 :
+        print("Bok musi byc wiekszy od zera")
+        return None
+    return a ** 2
 
 
-def triangle_area(base, height):
-    return (base * height) / 2
+def triangle_area(a, h):
+    return (a * h) / 2
