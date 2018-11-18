@@ -205,11 +205,17 @@ print(response.text)
 import re
 
 patter = re.compile("\d{3}")
-
 text = "123"
-
 print(patter.findall(text))
 
 ----
+POCZYTAJ
+pip install excel2img
+https://plot.ly/python/static-image-export/
+https://regexr.com/
+https://realpython.com/python-first-steps/#11-pythons-power-packagesmodules
+----
+### REGEX:
+email: [\w\.-]+@[\w\.-]+
 
 
