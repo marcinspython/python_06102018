@@ -177,6 +177,39 @@ colors = ["r", "g"]
 plt.bar(index, dane, color=colors)
 plt.show()
 ------
+Save ranges from Excel documents as images
+https://pypi.org/project/excel2img/
+------
+# ipconfig
+import os
 
+x = os.system("ipconfig")
+print(x)
+-------
+# scrapping
+from requests import get
+
+url = "https://plot.ly/python/static-image-export/"
+
+response = get(url)
+print(response)
+---2 
+from requests import get
+
+url = "https://plot.ly/python/static-image-export/"
+
+response = get(url)
+print(response.text)
+---
+#REGEX
+import re
+
+patter = re.compile("\d{3}")
+
+text = "123"
+
+print(patter.findall(text))
+
+----
 
 
