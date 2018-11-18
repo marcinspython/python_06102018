@@ -5,14 +5,12 @@
 # Skorzystaj z modułu re.
 
 import re
-line = "why people don't know what regex are? let me know asdfal2@als.com, Users1@gmail.de " \
-       "Dariush@dasd-asasdsa.com.lo,Dariush.lastName@someDomain.com"
-match = re.findall(r'[\w\.-]+@[\w\.-]+', line)
-for i in match:
-    print(i)
 
-# [\w\.-]+@[\w\.-]+
+POST_CODE_PATTERN = re.compile("^\d{2}-\d{3} | ^\d{2}-\d{3} | ^\d{2}-\d{3}$")
+EMAIL_PATTERN =
+DATE_PATTERN = 
 
-file = open(“dane/input.txt”,”r”)
-print(file)
+with open("input.txt") as f:
+    data = f.read()
+    print(POST_CODE_PATTERN.findall(data))
 
