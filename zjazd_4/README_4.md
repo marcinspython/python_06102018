@@ -66,6 +66,8 @@ www.metaweather.com/api/
 import tkinter
 
 ---
+# zadanie3 tkinter 
+# 2 przykłady - drugi na GIT z użyciem GRID-a
 import tkinter
 
 def sumuj():
@@ -99,3 +101,68 @@ policz_button.pack()
 root.title("Sumator")
 root.mainloop()
 ---
+# scv_example.py
+# 
+import csv
+
+with open("dane/titanic_train.csv") as csvfile:
+    data = csv.reader(csvfile, delimiter=",")
+    # print(data)
+    dlugosci = set()
+    for row in data:
+        # print(row)
+        dlugosci.add(len(row))
+    print(dlugosci) # liczy ile kolumn ma każdy wiersz
+-----
+```python
+
+# liczba osób z 0 i z 1 
+# scv_example.py
+import csv
+
+with open("dane/titanic_train.csv") as csvfile:
+    data = csv.DictReader(csvfile, delimiter=",")
+    dlugosci = {}
+    for row in data:
+        # print(row)
+        dlugosci[row['Survived']] = dlugosci.get(row['Survived'], 0) + 1
+    print(dlugosci)  # liczy ile kolumn ma każdy wiersz
+```
+---------
+https://realpython.com/python-csv/
+---------
+##### przyklad_tworzenia_pptx.py
+##### zapisuje do Power Point-a
+```python
+from pptx import Presentation
+
+prs = Presentation()
+
+slide_layout = prs.slide_layouts[1]
+
+slide = prs.slides.add_slide(slide_layout)
+shapes = slide.shapes
+
+title_shape = shapes.title
+
+body_shape = shapes.placeholders[1]
+
+title_shape.text = "Jakiś tekst"
+
+tf = body_shape.text_frame
+tf.text = "Zawartość tekst frame"
+
+p = tf.add_paragraph()
+p.text = "Kobiety"
+p.level = 1
+
+p = tf.add_paragraph()
+p.text = "Przeżyło"
+p.level = 1
+
+prs.save('raport.pptx')
+```
+-------
+
+
+
