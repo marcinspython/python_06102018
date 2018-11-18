@@ -1,7 +1,7 @@
 # policzyć % przeżywalność wsrod ogółu, kobiet, mężczyzn
 # policzyć średnią wieku kobiet i
 
-# TODO rkorzen
+# TODO rkorzen....
 
 import csv
 

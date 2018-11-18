@@ -131,7 +131,7 @@ with open("dane/titanic_train.csv") as csvfile:
 ---------
 https://realpython.com/python-csv/
 ---------
-##### przyklad_tworzenia_pptx.py
+#### przyklad_tworzenia_pptx.py
 ##### zapisuje do Power Point-a
 ```python
 from pptx import Presentation
@@ -163,6 +163,20 @@ p.level = 1
 prs.save('raport.pptx')
 ```
 -------
+```python
+print()
+
+```
+### WYKRES
+import matplotlib.pyplot as plt
+
+dane = [70, 80]
+index = ["konbiety", "mezczyzni"]
+colors = ["r", "g"]
+
+plt.bar(index, dane, color=colors)
+plt.show()
+------
 
 
 

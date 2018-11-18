@@ -1,3 +1,4 @@
+import csv
 from pptx import Presentation
 
 prs = Presentation()
@@ -16,13 +17,15 @@ title_shape.text = "Jakiś tekst"
 tf = body_shape.text_frame
 tf.text = "Zawartość tekst frame"
 
+# with open("report.csv") as f:
+#     data = csv.reader()
 p = tf.add_paragraph()
 p.text = "Kobiety"
 p.level = 1
 
 p = tf.add_paragraph()
 p.text = "Przeżyło"
-p.level = 1
+p.level = 2
 
 prs.save('raport.pptx')
 
