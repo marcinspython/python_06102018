@@ -213,6 +213,46 @@ openCV
 
 http://www.degeneratestate.org/posts/2016/Oct/23/image-processing-with-numpy/
 
+##########################
+#PANDAS
+
+www.pandas.pydata.org
+
+pip install pandas
+
+import pandas as pd
+
+---
+Series
+` s = pd.Series([])`
+ 
+---
+Przykład:
+
+folder_path = './files' -ścieżka do plików na dysku
+
+##### os.path.join(folder_path, 'titanic_train.csv')
+
+data = pd.read_csv(os.path.join(folder_path, 'titanic_train.csv'))
+
+data.head() -podgląd nazw kolumn, czy import jest poprawny
+
+- każda z koilumn posiada serie
+
+#####wczytanie pliku csv zZIP
+........csv.zip
+
+#### do otwierania excela
+pip install xlrd
+XLSX (Excel format)
+...........xlsx
+
+##### Pickle format binarny pliku (do trenowania modelu)
+= pd.read_pickle(...sciezka do pliku...)
+
+#### WRITING to File
+
+
 
 
 
