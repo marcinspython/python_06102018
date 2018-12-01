@@ -6,6 +6,9 @@ pandas (data frame)
 pip install numpy
 pip install pandas
 jupyter
+
+!pip install numpy -w jupyterze instalowanie numpy
+
 komenda w terminalu: `jupyter-notebook` otwiera w przegladarce 
 NumPy
 www.numpy.org
@@ -124,7 +127,8 @@ b.cumsum(axis=1)
 universal functions
 - wykresy
 
----
+--- 
+indeksowanie, wycinanie , iterowanie
 Indexing, Slicing, Iterating
 
 a = np.array([10,11,12])
@@ -139,6 +143,17 @@ b[1, 2] - tak jak wyzej
 b[1:2, 0:@] - tak jak wyzej ale zakresy
 
 
+--
+przyklad funkcji
+def f(x,y):
+    return 2*x+3*y
+f(2,3)
+b = np.fromfunction(f, (5,5))
+
+---
+b = np.fromfunction? 
+
+---
 
 
 
