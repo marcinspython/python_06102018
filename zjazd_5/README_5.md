@@ -216,7 +216,11 @@ http://www.degeneratestate.org/posts/2016/Oct/23/image-processing-with-numpy/
 ##############################################
 #PANDAS
 https://pandas.pydata.org/pandas-docs/stable/10min.html
+https://www.shanelynn.ie/using-pandas-dataframe-creating-editing-viewing-data-in-python/
+https://www.shanelynn.ie/using-pandas-dataframe-creating-editing-viewing-data-in-python/
 
+python anaconda
+https://conda.io/docs/user-guide/install/download.html
 
 www.pandas.pydata.org
 
@@ -348,9 +352,18 @@ Korzystając z pliku matches.csv zawierającego dane o rozgrywkach piłkarskich:
 3.Policz liczbę zdobytych i straconych bramek na sezon dla wybranej drużyny. Narysuj wykres obrazujący uzyskane wyniki.
 4.Policz średnią liczbę bramek przypadającą na jeden mecz w każdej lidze. Narysuj wykres obrazujący uzyskane wyniki.
 
+df = pd.read_csv('files/matches.csv', parse_dates=['date'])
+
+df.head()
+
+df['goal_diff']= (df.home_team_goal - df.away_team_goal).abs()
+df.sort_values('goal_diff', ascending=False).head(10)
+
+3.Policz liczbę zdobytych i straconych bramek na sezon dla wybranej drużyny. Narysuj wykres obrazujący uzyskane wyniki.
 
 
-
-
+### Wykres
+import matplotlib.pyplot as plt
+%mjatplotlib inline
 
 
