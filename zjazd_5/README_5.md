@@ -213,8 +213,10 @@ openCV
 
 http://www.degeneratestate.org/posts/2016/Oct/23/image-processing-with-numpy/
 
-##########################
+##############################################
 #PANDAS
+https://pandas.pydata.org/pandas-docs/stable/10min.html
+
 
 www.pandas.pydata.org
 
@@ -250,11 +252,91 @@ XLSX (Excel format)
 ##### Pickle format binarny pliku (do trenowania modelu)
 = pd.read_pickle(...sciezka do pliku...)
 
+
 #### WRITING to File
 
+pip install openpyxl
 
+---
+Pickle
+type(data)
 
+---
+info()
+data.info() 
+data.info?
 
+---
+`data.describe()` -opisuje, wyciaga wnioski z danych
+
+---
+data.columns
+
+---
+value counts
+data['Pclass'].value_counts()
+data.Pclass
+
+-- wybieranie kolumn
+data['Name']
+data[['Name']]
+
+--- wieksza liczba kolumn
+data[['Name', 'Survived]]
+
+---
+Wybieranie wierszy
+data[5:10]
+---
+import pandas as pd
+
+df = pd.read_csv("files/titanic_train.csv")
+df.head()
+
+df[['Survived', 'Pclass']]
+
+# Out[6]:
+#
+# 0    549
+# 1    342
+# Name: Survived, dtype: int64
+
+df.Survived.value_counts()
+# pobiera ostatni wiersz tabeli
+df[-1:]
+# pobiera pierwszy wiersz tabeli
+df.head(1)
+
+# wyswietla metody obiektu survived
+dir(df.Survived)
+# wyswietla wszystkie metody
+dir(df)
+
+# srednia wieku tytanica
+df.Age.mean()
+
+# mediana wieku
+df.Age.median()
+
+### Wybieranie przez labe;e - loc[]
+data.loc[]
+data.loc[5, 'Name']
+
+data.columns
+data.loc[5:10, 'Pclass','Age']
+
+### Wybieranie przez pozycje - iloc[]
+
+data.iloc[5:10, :3]
+
+data.iloc[range(0,50,5), [1,3]]
+### data.columns.get_slice_bound?
+data.columns.get_slice_bound()
+
+### zmiana typow danych podczas odczytu
+
+### dane kategoryczne
+ 
 
 
 
