@@ -337,6 +337,17 @@ data.columns.get_slice_bound()
 
 ### dane kategoryczne
  
+## Tworzenie DataFrame i Series
+
+
+## g.15:51 Dodatkowe ćwiczenia
+matches.csv
+Korzystając z pliku matches.csv zawierającego dane o rozgrywkach piłkarskich:
+1.Znajdź wszystkie mecze pomiędzy dwoma wybranymi drużynami w latach 2010-2015.\
+2.Znajdź 10 meczów z największą różnicą bramek.
+3.Policz liczbę zdobytych i straconych bramek na sezon dla wybranej drużyny. Narysuj wykres obrazujący uzyskane wyniki.
+4.Policz średnią liczbę bramek przypadającą na jeden mecz w każdej lidze. Narysuj wykres obrazujący uzyskane wyniki.
+
 
 
 
