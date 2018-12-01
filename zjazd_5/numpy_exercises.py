@@ -6,7 +6,7 @@ import numpy as np
 
 # Stwórz liste sześcianów liczb od 0 do 9
 a = np.arange(10) ** 3
-
+print(a)
 # wybierz z listy zaznaczone elementy
 a[2:5]
 
@@ -51,5 +51,5 @@ y = x.reshape(4,1)
 print(x*y)
 
 x = np.arange(10)
-y = np.arange(10,1)
+y = x.reshape(10,1)
 print(x*y)
