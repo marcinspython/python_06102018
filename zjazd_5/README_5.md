@@ -154,7 +154,21 @@ b = np.fromfunction(f, (5,5))
 b = np.fromfunction? 
 
 ---
+ukłądanie / łączenie różnych tabliuc - stacking
+a = np.floor(10*np.random.random((2,2)))
+b = np.floor(10*np.random.random((2,2)))
+np.vistack()
+np.hstack()
 
+---
+widoki i kopie
+c = a.view()
+
+---
+SciPy
+from scipy import sparse
+from sysy import getsizeof
+!pip install scipy
 
 
 
@@ -175,3 +189,35 @@ b = np.fromfunction?
 
 
 ---------------------------------------------------------
+#### OBRAZKI - obrazki to też tablice
+
+import matplotlib.image as mpimg
+im = 
+
+im.shape
+
+type(im) -sprawdz typ
+
+numpy.ndarray
+
+---
+%matplotlib inline
+import matplotlib.pyplot as plt
+plt.imshow(im)
+
+im[wiersze,kolumny, 0]
+im[:,:,0]
+
+openCV
+#### !pip install opencv-python
+
+http://www.degeneratestate.org/posts/2016/Oct/23/image-processing-with-numpy/
+
+
+
+
+
+
+
+
+
