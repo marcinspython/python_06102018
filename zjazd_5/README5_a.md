@@ -145,3 +145,15 @@ def main_page(request):
     return HttpResponse(content="To jest main page")
 ```
 
+Do uruchomienia przeglądarki:
+(venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py runserver
+
+---
+uruchom debugger
+postaw kropke i wejdz na strone odpowiednia
+- mozna podejrzez zapytania
+- kto jest zalogowany
+- jaka jest metoda
+- 
+
+---

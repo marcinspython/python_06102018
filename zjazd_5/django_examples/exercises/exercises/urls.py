@@ -17,9 +17,11 @@ from django.contrib import admin
 
 from django.urls import path
 
-from zjazd_5.django_examples.exercises.mainpage.views import main_page
+from zjazd_5.django_examples.exercises.mainpage.views import main_page, hello_world, hello_personalized
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", main_page),
+    path("hello", hello_world),
+    path("hello/<name>", hello_personalized),
 ]
