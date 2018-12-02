@@ -1,4 +1,9 @@
-### 02.12.2018
+### 02.12.2018 
+####MVC
+Model
+Vidok
+Controller
+
 ##Dash
 https://dash.plot.ly/installation
 
@@ -55,4 +60,88 @@ w katalogu django_examples (startproject + nazwa projektu)
 `(venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py`
 `zjazd_5\django_examples\exercises>python manage.py runserver`
 
+* admin.dane.gov.pl -example, panel administratora
+
+---
+zjazd_5\django_examples\exercises>python manage.py
+zjazd_5\django_examples\exercises>python manage.py createsuperuser
+
+błąd bo nie mamy pliku - trzeba najpierw zrobic migrate:
+- plik ktory powie bazie danych jakie zmiany ma dokonac na istniejacych tabe;ach
+python manage.py migrate
+zjazd_5\django_examples\exercises>python manage.py createsuperuser
+
+--
+sqlite browser -do podgladu bazyu danych
+https://sqlitebrowser.org/
+
+---
+\zjazd_5\django_examples\exercises>python manage.py createsuperuser
+
+wejdz na db browser for sql
+sprawdzam dodanie użytkownika
+nastepnie moge sie zalogowac na:
+
+http://127.0.0.1:8000/admin/
+
+---
+(venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py runserver
+http://127.0.0.1:8000/admin/
+
+#### MVC
+Model-View-Controller
+
+#### MVT django
+https://www.tutorialspoint.com/django/django_overview.htm
+
+#### Widoki
+
+---
+w pliku urls.py mozemy dodac funkcje....
+```python
+"""
+from django.contrib import admin
+from django.http import HttpResponse, response
+from django.urls import path
+
+def main_page(request):
+    return HttpResponse(content="To jest main page")
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("", main_page)
+]
+```
+(venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py runserver
+
+---
+python manage.py startapp mainpage
+
+nastepnie:
+```python
+
+from django.contrib import admin
+
+from django.urls import path
+
+from zjazd_5.django_examples.exercises.mainpage.views import main_page
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("", main_page),
+]
+
+```
+
+a w pliku powstalym views.py
+```python
+from django.shortcuts import render
+
+# Create your views here.
+
+from django.http import HttpResponse, response
+
+def main_page(request):
+    return HttpResponse(content="To jest main page")
+```
 
