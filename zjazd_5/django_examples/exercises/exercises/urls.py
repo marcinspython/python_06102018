@@ -17,11 +17,14 @@ from django.contrib import admin
 
 from django.urls import path
 
-from zjazd_5.django_examples.exercises.mainpage.views import main_page, hello_world, hello_personalized
+from zjazd_5.django_examples.exercises.mainpage.views import main_page, hello_world, hello_personalized, dodaj
+from zjazd_5.django_examples.exercises.maths.views import math_operations
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", main_page),
     path("hello", hello_world),
     path("hello/<name>/<lastname>", hello_personalized),
+    path("calc/<a>/<b>", dodaj),
+    path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),
 ]

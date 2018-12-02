@@ -156,4 +156,32 @@ postaw kropke i wejdz na strone odpowiednia
 - jaka jest metoda
 - 
 
----
+----------------
+mathematica nowy projekt
+
+python manage.py startapp maths "-w exercises nowy projekt"
+
+w urls.py dodaje:
+`    path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),`
+nastepnie w nowym maths/views.py
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+
+# Create your views here.
+
+def math_operations(request, operation, arg_a, arg_b):
+    result = None
+    if operation == "add":
+        result = arg_a + arg_b
+    elif operation == "sub":
+        result = arg_a - arg_b
+
+    return HttpResponse(result)
+```
+
+,,,
+http://127.0.0.1:8000/maths/add/2/2
+http://127.0.0.1:8000/maths/sub/2/2
+
+models.py 
