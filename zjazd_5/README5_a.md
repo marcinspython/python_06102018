@@ -256,8 +256,13 @@ w DB Browser
  mamy dodana tabele `maths_math`
  
  ---
+ ```python
+exercises>python manage.py shell
+```
  (venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py shell
 -uruchamia konsole pytjhonowa do tworzenia obiektow bazy
+
+
 ```python
 In [1]: from maths.models import Math
 
@@ -295,3 +300,12 @@ po tym sprawdzam w bazie czy element został dodany
 - maths_math w DB....
 
 ----
+```
+In [5]: Math.objects.create(operation="add", arg_a=5, arg_b=5)
+Out[5]: <Math: Math object (2)>
+```
+```python
+In [6]: Math.objects.create(operation="sub", arg_a=5, arg_b=5)
+Out[6]: <Math: Math object (3)>
+
+```
