@@ -13,7 +13,7 @@ def calculate(operation, arg_a, arg_b):
 # Create your views here.
 
 def math_operations(request, operation, arg_a, arg_b):
-    Math.objects.create(operation=operation, a=arg_a, b=arg_b)
+    Math.objects.create(operation=operation, arg_a=arg_a, arg_b=arg_b)
     return HttpResponse(calculate(m.operation, m.arg_a, m.arg_b))
 
 

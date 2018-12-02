@@ -525,3 +525,7 @@ urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls'))
 ]
 ```
+------------------------------------
+django get_user_model
+
+exit() -wyjście s shell-a
