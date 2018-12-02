@@ -7,3 +7,5 @@ class Math(models.Model):
     arg_a = models.IntegerField()
     arg_b = models.IntegerField()
 
+# def __str__(self):
+#     return f"Math operation: {self.operation} {self.} {} "

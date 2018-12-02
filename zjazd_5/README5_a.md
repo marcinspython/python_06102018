@@ -1,4 +1,7 @@
 ### 02.12.2018 
+
+BOOK: Django Admin Cookbook
+
 ####MVC
 Model
 Vidok
@@ -351,4 +354,138 @@ add:7 8
 add:7 8 
 add:1 9 
 ```
+do maths/views.py dodaj linijke
+    `Math.objects.create(operation=operation, a=arg_a, b=arg_b)`
+    by mozna było dodawać wartosci na www 
+np. http://127.0.0.1:8000/maths/add/2/2
 
+----------
+admin.py
+```python
+from django.contrib import admin
+
+# Register your models here.
+
+class MathAdmin(admin.ModelAdmin):
+    pass
+```
+by z formularza mozna było dodawać operation
+```python
+from django.contrib import admin
+from  maths.models import Math
+
+# Register your models here.
+
+class MathAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Math, MathAdmin)
+```
+run
+w przegladarce
+http://127.0.0.1:8000/admin/
+widoczne MATHS
+
+next:
+```python
+from django.contrib import admin
+from  maths.models import Math
+
+# Register your models here.
+
+class MathAdmin(admin.ModelAdmin):
+    list_display = ["operation", "arg_a", "arg_b"]
+
+admin.site.register(Math, MathAdmin)
+```
+
+DODANIE pola search w django:
+```python
+from django.contrib import admin
+from  maths.models import Math
+
+# Register your models here.
+
+class MathAdmin(admin.ModelAdmin):
+    list_display = ["operation", "arg_a", "arg_b"]
+    search_fields = ["operation"]
+
+admin.site.register(Math, MathAdmin)
+```
+FILTER:
+`    list_filter = ["operation"]`
+
+---
+MAths/views.py
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+from maths.models import Math
+
+def calculate(operation, arg_a, arg_b):
+    result = None
+    if operation == "add":
+        result = arg_a + arg_b
+    elif operation == "sub":
+        result = arg_a - arg_b
+    return result
+
+# Create your views here.
+
+def math_operations(request, operation, arg_a, arg_b):
+    Math.objects.create(operation=operation, a=arg_a, b=arg_b)
+    return HttpResponse(calculate(m.operation, m.arg_a, m.arg_b))
+
+
+def math_list(request):
+    objects = Math.objects.all()
+    out = ""
+    for o in objects:
+        out += f"{o.operation}:{o.arg_a} {o.arg_b} <br>"
+
+    return HttpResponse(out)
+
+def math_details(request, id):
+    m = Math.objects.get(pk=id)
+
+    out = f"""
+    Operacja: {m.operation}<br>
+    arg 1: {m.arg_a}<br>
+    arg 2: {m.arg_b}<br>
+    ----------------<br>
+    wynik: {calculate(m.operation, m.arg_a, m.arg_b)}<br>
+    """
+    return HttpResponse(out)
+```
+urls.py
+``
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path("", main_page),
+    path("hello", hello_world),
+    path("hello/<name>/<lastname>", hello_personalized),
+    path("calc/<a>/<b>", dodaj),
+    path("maths", math_list),
+    path("maths/<int:id>", math_details),
+    path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),
+]
+``
+run
+http://127.0.0.1:8000/maths/1
+
+Operacja: add
+ arg 1: 3
+ arg 2: 4
+ ----------------
+ wynik: 7
+ 
+ ------------------------------------------------
+ TWORZENIE TEMPLATES:
+ exercises/maths/templates....
+ np. math_list.html jakonowy plik
+ wyświetlanie tabeli danych w formacie HTML...
+ 
+ formatowanie htmla
+ tworzenie css-ów
+ w2school - 
+ Bootstrap - 
