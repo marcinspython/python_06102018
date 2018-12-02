@@ -36,3 +36,23 @@ otwórz cmd i  wpisz > ping wp.pl
 dane.gov.pl -zbiory danych
 
 ---
+
+## Django
+https://docs.djangoproject.com/en/2.1/
+https://www.pythonanywhere.com/ -utworzenie apki w chmurze za free
+werkzeug.pocoo.org
+www.heroku -utworzenie apki w chmurze za free
+vipserv.org -utworzenie apki w chmurze za free
+
+`pip install django`
+
+www.humblebundle.com -shop with pycharm and python
+
+TERMINAL:
+w katalogu django_examples (startproject + nazwa projektu)
+`django-admin startproject exercises`
+
+`(venv) C:\Users\kurs\PycharmProjects\bootcamp\zjazd_5\django_examples\exercises>python manage.py`
+`zjazd_5\django_examples\exercises>python manage.py runserver`
+
+
