@@ -18,8 +18,7 @@ from django.urls import path, include
 
 from mainpage.views import main_page, hello_world, hello_personalized, dodaj
 from maths.views import math_operations, math_list, math_details
-
-
+from products.views import fake_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +29,7 @@ urlpatterns = [
     path("maths", math_list),
     path("maths/<int:id>", math_details),
     path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),
+    path("products", fake_view),
 ]
 
 urlpatterns += [

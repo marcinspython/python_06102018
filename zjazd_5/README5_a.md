@@ -529,3 +529,15 @@ urlpatterns += [
 django get_user_model
 
 exit() -wyjście s shell-a
+
+------------------------------------
+dane.gov.pl
+api.dane.gov.pl
+python falcon framework [falcon]<falconframework.org>
+-------------------------------------
+Products:
+ost.zadanie:
+>python manage.py startapp products
+templates
+do urls dodaj 
+path("products", fake_view)
