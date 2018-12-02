@@ -31,3 +31,7 @@ urlpatterns = [
     path("maths/<int:id>", math_details),
     path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),
 ]
+
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls'))
+]

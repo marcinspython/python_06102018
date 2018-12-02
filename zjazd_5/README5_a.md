@@ -1,6 +1,7 @@
 ### 02.12.2018 
 
 BOOK: Django Admin Cookbook
+http://books.agiliq.com/projects/django-admin-cookbook/en/latest/
 
 ####MVC
 Model
@@ -489,3 +490,38 @@ Operacja: add
  tworzenie css-ów
  w2school - 
  Bootstrap - 
+ 
+ -----------------------------------------------
+ Wymuszenie wyswietlania tablei osobom zalogowanym:
+ @login_required
+ 
+ login.html
+```html
+{% extends "base.html" %}
+
+{% block content %}
+    {% if error %}
+        <p class="alert alert-danger">{{ error }}</p>
+    {% endif %}
+    <form method="POST">{% csrf_token %}
+        <div class="form-group">
+            <label for="exampleInputEmail1">User name</label>
+            <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="User name" name="username">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" placeholder="Password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+{% endblock %}
+```
+ 
+ -------------------------------
+ rozszerzenie pliku urls.py -gdy cos sie nowego pojawi to automatycznie zostanie dodane
+ ```python
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls'))
+]
+```
