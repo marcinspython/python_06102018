@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from mainpage.views import main_page, hello_world, hello_personalized, dodaj
-from maths.views import math_operations
+from maths.views import math_operations, math_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +25,6 @@ urlpatterns = [
     path("hello", hello_world),
     path("hello/<name>/<lastname>", hello_personalized),
     path("calc/<a>/<b>", dodaj),
+    path("maths", math_list),
     path("maths/<operation>/<int:arg_a>/<int:arg_b>", math_operations),
 ]

@@ -300,7 +300,7 @@ po tym sprawdzam w bazie czy element został dodany
 - maths_math w DB....
 
 ----
-```
+```python
 In [5]: Math.objects.create(operation="add", arg_a=5, arg_b=5)
 Out[5]: <Math: Math object (2)>
 ```
@@ -309,3 +309,46 @@ In [6]: Math.objects.create(operation="sub", arg_a=5, arg_b=5)
 Out[6]: <Math: Math object (3)>
 
 ```
+WYSQWIETLANIE W FUNKCJI
+ w maths/views.py
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+from maths.models import Math
+
+
+# Create your views here.
+
+def math_operations(request, operation, arg_a, arg_b):
+    result = None
+    if operation == "add":
+        result = arg_a + arg_b
+    elif operation == "sub":
+        result = arg_a - arg_b
+
+    return HttpResponse(result)
+
+
+def math_list(request):
+    objects = Math.objects.all()
+    out = ""
+    for o in objects:
+        out += f"{o.operation}:{o.arg_a} {o.arg_b} <br>"
+
+    return HttpResponse(out)
+
+```
+w urls.py dodaj
+``    path("maths", math_list),``
+
+jak wpisze w przeg;ladarke po uruchomieniu pliku RUN exercise to pojawi mi sie lista danych ktora dodałem do bazy
+`http://127.0.0.1:8000/maths`
+```python
+add:3 4 
+add:5 5 
+sub:5 5 
+add:7 8 
+add:7 8 
+add:1 9 
+```
+
