@@ -10,5 +10,5 @@ def main_page(request):
 def hello_world(request):
     return HttpResponse(content="Hello World")
 
-def hello_personalized(request, name):
-    return HttpResponse(content=f"Hello {name}")
+def hello_personalized(request, name, lastname):
+    return HttpResponse(content=f"Hello {name}{lastname}")
